@@ -8,8 +8,9 @@ public class SudokuSolver {
 	private static Boolean solutionFound = false;
 	
     public static void main(String[] args) {
-    	int[][] sudoku = readFromFile("files/sudoku2.txt");
+    	int[][] sudoku = readFromFile("files/sudoku1.txt");
     	System.out.print("Working with the following sudoku");
+    	
     	printSudoku(sudoku);
     	
     	Boolean solution = solveSudoku(sudoku, 0, -1);
@@ -182,6 +183,20 @@ public class SudokuSolver {
 		}
 		public void setCol(int col) {
 			this.col = col;
+		}
+	}
+	
+	public static class MyRunnable implements Runnable {
+		private final String url;
+ 
+		MyRunnable(String url) {
+			this.url = url;
+		}
+ 
+		@Override
+		public void run() {
+ 
+
 		}
 	}
 
