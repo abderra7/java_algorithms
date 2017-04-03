@@ -197,8 +197,7 @@ public class InvisibleFriend {
 		         // Send the actual HTML message, as big as you like
 		         message.setContent("Dear " + friend.getName() + "<br/><br/>" + messageBody + 
 		        		 "<br/><br/>Your invisible friend is " + friends.get(friend.getTo().intValue()-1).getName(), "text/html");
-		         System.out.println("Dear " + friend.getName() + "<br/><br/>" + messageBody + 
-		        		 "<br/><br/>Your invisible friend is " + friends.get(friend.getTo().intValue()-1).getName());
+
 		         // Send message
 		         Transport.send(message);
 		      }catch (MessagingException mex) {
