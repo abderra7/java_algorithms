@@ -97,7 +97,7 @@ public class ReadPlayersData {
                 }
                 try { 
                     String url = "jdbc:mysql://localhost/test?useUnicode=true&characterEncoding=UTF-8"; 
-                    Connection conn = DriverManager.getConnection(url,"mubawab","mubawab"); 
+                    Connection conn = DriverManager.getConnection(url,"root","123456"); 
                     Statement st = conn.createStatement(); 
                     name = name.replaceAll("\'", " ");
                     equip = equip.replaceAll("\'", " ");
